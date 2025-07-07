@@ -1,0 +1,57 @@
+# Ignore node dependencies
+node_modules/
+
+# Ignore the Cypress binary (auto-installed)
+Cypress/
+!cypress/  # Keep your test code inside the cypress folder
+
+# Ignore log files
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore test screenshots and videos
+cypress/screenshots/
+cypress/videos/
+
+# Ignore environment config
+.env
+.env.local
+.env.*.local
+
+# Ignore coverage reports
+coverage/
+.nyc_output/
+
+# Ignore build outputs
+dist/
+build/
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore editor folders
+.vscode/
+.idea/
+
+# Git LFS and other metadata
+*.lfs
+.gitattributes
+
+# Cypress binary and heavy files
+Cypress/
+!cypress/  # Keep test specs only
+
+# OR ignore specific files
+Cypress/Cypress.exe
+Cypress/browser_v8_context_snapshot.bin
+Cypress/resources/app/node_modules/@ffmpeg-installer/win32-x64/ffmpeg.exe
+
+Cypress/
+*.dll
+*.exe
+*.bin
